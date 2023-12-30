@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ movie.name }} </title>
+</head>
+<body>
+    <p>
+        نام فیلم:
+        {{ movie.name }}
+    </p>
+    <p>
+        کارگردان:
+        {{ movie.director }}
+    </p>
+    <p>
+        سال تولید:
+        {{ movie.year }}
+    </p>
+    <p>
+        مدت زمان:
+        {{ movie.length }}
+    </p>
+    <p>
+        توضیحات:
+        {{ movie.description }}
+    </p>
+</body>
+</html>

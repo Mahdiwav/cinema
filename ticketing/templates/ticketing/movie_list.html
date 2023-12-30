@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست فیلم ها</title>
+</head>
+<body>
+    <h1>سامانه فروش بلیت</h1>
+    <h2>فیلم های در حال اکران</h2>
+    <a href="{% url 'ticketing:cinema_list' %}">
+        برای دیدن سینما ها کلیک کنید
+    </a>
+    {% if movie_list %}
+        <p style="color: green">
+        تعداد
+        {{ movie_count }}
+        فیلم وجود دارد
+        </p>
+        <ul>
+         {% for movie in movie_list %}
+            <li>
+            <a href="{% url "ticketing:movie_details" movie_id=movie.id %}">
+            {{ movie }}
+            </a>
+            </li>
+         {% endfor %}
+        </ul>
+    {% else %}
+        <p style="color: red">
+            متاسفانه فیلیمی وجود ندارد
+        </p>
+    {% endif %}
+
+</body>
+</html>
