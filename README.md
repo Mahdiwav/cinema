@@ -1,0 +1,3 @@
+Hello, this project is a Django educational project in which the back-end part of a cinema ticket sales site has been implemented. 
+The tasks that need to be done in this project are the ability to define and manage movies, the ability to define and manage cinemas, the ability to define and manage screenings, the possibility of searching for screenings by movie, cinema and time.
+In this project, we have two main components, one is ticket sales (which includes cinemas, movies and tickets) and the other is user management (which includes users and user profiles), but how should these two components be connected? We did this using tickets and connected these components together
