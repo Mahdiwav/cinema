@@ -433,7 +433,9 @@ If you would like to improve the project:
 
 ## 📄 License
 
-No license has currently been specified for this project.
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for more information.
 
 ---
 
